@@ -1,0 +1,138 @@
+body{
+    background-image: url(./gon.png);
+    background-size: 100%;
+}
+.icons2{
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 5px;
+
+    
+}
+ul{
+    float: right;
+    top: 50%;
+}
+li{
+    list-style: none;
+    padding-top: 2vw;
+
+}
+
+h1{
+
+    color: aliceblue;
+}
+
+p{
+
+    color: aliceblue;
+}
+
+.character-info {
+    
+   
+    display: flex;
+    flex-direction: column;
+    float: left;
+    top: 50%;
+    position: fixed;
+    margin-left: 20px;
+    transform: translateY(-50%)
+   
+    
+}
+
+.character-info h1 {
+    font-size: 3vw;
+    margin-bottom: 5px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.character-info p {
+    font-size: 1.5vw;
+    color: #666;
+    
+}
+#description, #title, #logo{
+    color: #fff;
+    float: left;
+    
+    
+}
+.icon-gon.selected {
+    border-radius: 50px; 
+    box-shadow:1px 3px  2px green; 
+    transition: .4s;
+    transform: scale(1.1);
+}
+
+.icon-killua.selected {
+    border-radius: 50px; 
+    box-shadow: 1px 3px  2px rgba(128, 0, 128, 0.9); 
+    transition: .4s;
+    transform: scale(1.1);
+    
+}
+
+.icon-kurapika.selected {
+   
+    
+    border-radius: 80px; 
+    box-shadow: 1px 3px  2px  red; 
+    transition: .4s;
+    transform: scale(1.1);
+}
+
+.icon-hisoka.selected {
+    border-radius: 50px; 
+    box-shadow: 1px 3px  2px rgba(65, 105, 225, 0.9); 
+    transition: .2s;
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 600px) {
+    .icons2 {
+      display: flex;
+      flex-direction: column-reverse; /* Inverte a ordem dos elementos na coluna */
+      align-items: center; /* Centraliza os elementos na coluna */
+      justify-content: center; /* Centraliza os ícones horizontalmente */
+      flex-wrap: wrap; /* Permite que os ícones quebrem para a próxima linha */
+      width: 90px;
+    }
+  
+    
+  
+      ul {
+      flex: 0 0 auto; /* Permite que os ícones tenham seu próprio tamanho */
+      margin: 15px; /* Espaçamento entre os ícones */
+      display: flex;
+      position: relative;
+      
+      top: 490px;
+     
+      
+    }
+    
+  
+    .character-info {
+      display: none; /* Esconde o contêiner de informações do personagem */
+    }
+  
+    #logo {
+      display: none; /* Esconde a logo */
+    }
+    body{
+        
+        display: flex;
+        background-size: 250%;
+        background-position: calc(100% + 150px) calc(50% + 240px)  ;
+        
+        
+
+    }
+}
+
+  

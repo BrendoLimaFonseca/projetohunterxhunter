@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Platypi:ital@0;1&display=swap" rel="stylesheet">
+<!--font da descriçao-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+    <div class="container">
+        <div class="icons">
+            <ul>
+                <li class="icon-gon"   onclick="changeBackground('gon.png', 'Gon Freecss', 'Gon Freecss é o protagonista principal da série Hunter x Hunter. <br> Ele é um jovem alegre e determinado que cresceu na Ilha da Baleia,<br> sob os cuidados de sua avó.  Gon tem como objetivo se tornar um Hunter,<br> seguindo os passos de seu pai, que é um renomado Hunter desaparecido. <br> Ele é conhecido por sua natureza gentil, coragem e habilidades naturais <br> como Hunter.')">
+                    <img class="icons2"   src="icon gon.jpg" alt="">
+                </li>
+                <li class="icon-killua"  onclick="changeBackground('killua.png', 'Killua Zoldyck', 'Killua Zoldyck é um dos melhores amigos de Gon <br>e um dos principais personagens de Hunter x Hunter. <br> Ele nasceu na família Zoldyck, uma família de assassinos<br notória por suas habilidades mortais. <br> Killua inicialmente é retratado como um jovem calmo e calculista,<br> mas ao longo da série desenvolve uma forte amizade com Gon<br> e busca sua própria liberdade e identidade fora do mundo sombrio<br> de sua família.')">
+                    <img class="icons2"   src="icon killua.jpg" alt="">
+                </li>
+                <li class="icon-kurapika"   onclick="changeBackground('kurapika.png', 'kurapika kurta', 'Kurapika é outro protagonista importante de Hunter x Hunter <br>e um dos últimos membros sobreviventes do Clã Kurta. <br>Ele busca vingança contra a Troupe Fantasma pelo massacre <br>de seu clã e pela roubada dos olhos escarlates únicos do clã,<br que se tornam vermelhos quando estão agitados emocionalmente. <br> Kurapika é um usuário habilidoso de Nen e é conhecido <br> por sua determinação, inteligência e lealdade aos seus <br>amigos.')">
+                    <img class="icons2"  src="kurapika icon.jpg" alt="">  
+                </li>
+                <li class="icon-hisoka"   onclick="changeBackground('hisoka.png', 'Hisoka Morow', 'Hisoka Morow é um dos antagonistas mais notáveis de Hunter x Hunter. <br>  Ele é um Hunter licenciado e um membro misterioso do Genei Ryodan,<br> também conhecido como Troupe Fantasma. <br>  Hisoka é conhecido por sua personalidade instável e sádica,<br> bem como por sua habilidade em manipular a aura e lutar com cartas de jogo. <br>  Ele é especialmente obcecado por desafios e batalhas emocionantes,<br> muitas vezes considerando Gon como seu alvo principal de interesse.')">
+                    <img class="icons2"  src="hisoka icon.webp" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="character-info">
+        <img id="logo"  src="./logo.png" width="200vw"  alt="">
+        <h1 id="title">Gon Freecss</h1>
+        <p id="description">Gon Freecss é o protagonista principal da série Hunter x Hunter. <br> Ele é um jovem alegre e determinado que cresceu na Ilha da Baleia,<br> sob os cuidados de sua avó.  Gon tem como objetivo se tornar um Hunter,<br> seguindo os passos de seu pai, que é um renomado Hunter desaparecido. <br> Ele é conhecido por sua natureza gentil, coragem e habilidades naturais <br>como Hunter</p>
+    </div>
+
+    <script>
+        function changeBackground(imagePath, title, description) {
+       
+       var listItems = document.querySelectorAll('.icons li');
+       listItems.forEach(function(item) {
+           item.classList.remove('selected');
+       });
+   
+     
+       event.currentTarget.classList.add('selected');
+   
+      
+       document.body.style.backgroundImage = "url('" + imagePath + "')";
+       document.getElementById('title').innerText = title;
+       document.getElementById('description').innerHTML = description; 
+   }
+   
+   
+   window.onload = function() {
+       document.body.style.backgroundImage = "url('gon.png')";
+   };
+   
+   
+       </script>
+</body>
+</html>
