@@ -41,29 +41,7 @@
         <p id="description">Gon Freecss é o protagonista principal da série Hunter x Hunter. <br> Ele é um jovem alegre e determinado que cresceu na Ilha da Baleia,<br> sob os cuidados de sua avó.  Gon tem como objetivo se tornar um Hunter,<br> seguindo os passos de seu pai, que é um renomado Hunter desaparecido. <br> Ele é conhecido por sua natureza gentil, coragem e habilidades naturais <br>como Hunter</p>
     </div>
 
-    <script>
-        function changeBackground(imagePath, title, description) {
-       
-       var listItems = document.querySelectorAll('.icons li');
-       listItems.forEach(function(item) {
-           item.classList.remove('selected');
-       });
    
-     
-       event.currentTarget.classList.add('selected');
-   
-      
-       document.body.style.backgroundImage = "url('" + imagePath + "')";
-       document.getElementById('title').innerText = title;
-       document.getElementById('description').innerHTML = description; 
-   }
-   
-   
-   window.onload = function() {
-       document.body.style.backgroundImage = "url('gon.png')";
-   };
-   
-   
-       </script>
+       <script src="./js.js"></script>
 </body>
 </html>
